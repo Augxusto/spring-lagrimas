@@ -25,7 +25,7 @@ public class EstudanteService {
     public Optional<Estudante> buscarPorId(Long id) {
         return repository.findById(id);
     }
-    
+
     public void deletar(Long id) {
         repository.deleteById(id);
     }
