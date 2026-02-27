@@ -17,6 +17,9 @@ public class Estudante {
     private String email;
     private Integer idade;
 
+    public Estudante() {
+    }
+    
     public Estudante(Long id, String nome, String email, Integer idade) {
         this.id = id;
         this.nome = nome;
