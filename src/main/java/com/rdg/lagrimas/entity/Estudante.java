@@ -19,7 +19,7 @@ public class Estudante {
 
     public Estudante() {
     }
-    
+
     public Estudante(Long id, String nome, String email, Integer idade) {
         this.id = id;
         this.nome = nome;

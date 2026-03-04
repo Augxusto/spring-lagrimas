@@ -29,4 +29,11 @@ public class EstudanteService {
     public void deletar(Long id) {
         repository.deleteById(id);
     }
+
+    public Estudante atualizarEstudante(Long id, Estudante estudante){
+        Estudante newEstudante = repository.findById(id).get();
+        newEstudante.setNome(estudante.getNome());
+
+        return repository.save(newEstudante);
+    }
 }
